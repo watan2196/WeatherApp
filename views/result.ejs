@@ -20,7 +20,7 @@ body,html{
 
   /* Full height */
 			.container-fluid{
-				padding-top:15%;
+				padding-top:5%;
 				text-align:center;
 				width: 100%;
 				font-size:18px;
@@ -46,30 +46,20 @@ body,html{
 		<h2>
 			Temperature: <%= climate.temperature %>°С
 		</h2>
-		
-	
-			<span class="a"><img src="http://openweathermap.org/img/wn/<%= climate.icon %>@2x.png" width="50" height="50" >
+		<img src="http://openweathermap.org/img/wn/<%= climate.icon %>@2x.png" width="50" height="50" >
 			
 				<h1>
 					<%= climate.description %>
 				</h1>
-			</span>
-			<br>
 		<h2>
 			Wind:<%= climate.wind %> m/s
 	</h2>
-	
 	<h2>
 		Clouds: <%= climate.cloud %>%
 	</h2>
 	<h2>
 		Geo coords: <a href="https://openweathermap.org/weathermap?zoom=12&lat=<%=climate.lati %>&lon=<%=climate.long%>">[ <%= climate.long %>, <%= climate.lati %> ]</a>
-	</h2>
-	
-	<br>
-	<br>
-	
-		<a href="/"><button>Search Again
+	</h2><a href="/"><button>Search Again
 	</button></a>
 		
 </div>
