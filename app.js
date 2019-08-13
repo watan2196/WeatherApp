@@ -46,6 +46,6 @@ app.get("*",function(req,res){
 });
 
 
-app.listen(process.env.PORT,process.env.IP,function(){
+app.listen(3000,()=>{
 	console.log("weather search engine started!!");
 });
