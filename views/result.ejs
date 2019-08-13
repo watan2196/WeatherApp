@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<title>WeatherApp</title>
+		
+		<style>
+		body {
+  		background-color: #E48550;
+			display:inline;
+				decoration:none;
+			}
+			.container-fluid{
+				text-align:center;
+			}
+			/* .arrange{
+				display:inline;
+			} */
+			span.a{
+				display:inline;
+			}
+		</style>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<body>
+<div class="container-fluid">
+		<h1>
+		Weather in <%= climate.city %>,<%=climate.country %>
+		</h1>
+		<h2>
+			Temperature: <%= climate.temperature %>°С
+		</h2>
+		
+			<span class="a"><img src="http://openweathermap.org/img/wn/<%= climate.icon %>@2x.png" width="50" height="50" >
+			
+				<h1>
+					<%= climate.description %>
+				</h1>
+			</span>
+			<br>
+		<h2>
+			Wind:<%= climate.wind %> m/s
+	</h2>
+	
+	<h2>
+		Clouds: <%= climate.cloud %>%
+	</h2>
+	<h2>
+		Geo coords: <a href="https://openweathermap.org/weathermap?zoom=12&lat=<%=climate.lati %>&lon=<%=climate.long%>">[ <%= climate.long %>, <%= climate.lati %> ]</a>
+	</h2>
+	
+	<br>
+	<br>
+	
+		<a href="/"><button>Search Again
+	</button></a>
+		
+</div>
+		
+	</body>
+</html>
+
+
+
+

@@ -1,0 +1,42 @@
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<title>WeatherApp</title>
+		
+		<style>
+		body {
+  		background-color: #E48550;
+			}
+			.container-fluid{
+				text-align:center;
+				padding-top:5%;
+			}
+		</style>
+	</head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<body>
+<div class="container-fluid">
+	<h2>
+		Enter your location
+	</h2>
+
+<form method="GET" action="/results">
+	
+<input type="text" name="city" placeholder="Your City Name">
+	<br><br>
+	
+	<button class="btn btn-primary btn-lrg">Search</button>
+</form>
+	</div>
+	</body>
+</html>
