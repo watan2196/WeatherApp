@@ -12,8 +12,6 @@ app.get("/",function(req,res){
 });
 
 
-
-
 app.get("/results",function(req,res){
 	// console.log(req.query);
 	var city=req.query.city;
@@ -46,6 +44,6 @@ app.get("*",function(req,res){
 });
 
 
-app.listen(process.env.PORT,process.env.IP,function(){
+app.listen(3000,function(){
 	console.log("weather search engine started!!");
 });
